@@ -3,7 +3,6 @@ package com.movies.cinema.entity;
 import java.sql.Timestamp;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -18,8 +17,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "CAST")
 public class Cast {
     @Id
-    @GeneratedValue
-    private int id;
+    private int cid;
     private String name;
     private Timestamp birthday;
     private Timestamp deadday;
